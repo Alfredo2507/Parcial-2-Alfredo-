@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encuesta sobre tu uso de tienda online</title>
+</head>
+<body bgcolor="lightblue">
+    <section id="Encuesta">
+        <div id="capa3">
+            <h2>Encuesta sobre tu uso de tienda online</h2>
+            <ul>
+                <li>
+                    <label for="age">¿Qué edad tienes?:</label><br> 
+                    <input type="number" id="age" name="age"><br>
+                </li>
+                <li>
+                    <label for="province">¿En qué provincia vives?</label><br> 
+                    <input type="text" id="province" name="province"><br>
+                </li>
+                <li>
+                    <label for="sexo">Eres?</label><br>
+                    <input type="radio" id="Masculino" name="seleccionar_sexo" value="masculino">
+                    <label for="Masculino">Masculino</label><br>
+                    <input type="radio" id="Femenino" name="seleccionar_sexo" value="Femenino">
+                    <label for "Femenino">Femenino</label>
+                    <input type="radio" id="prefiero_no_decirlo" name="seleccionar_sexo" value="prefiero_no_decirlo">
+                    <label for="prefiero_no_decirlo">Prefiero no decirlo</label><br><br>
+                </li>
+                <li>
+                    <label for="opcion">A qué te dedicas:</label>
+                    <select id="opcion" name="opcion">
+                        <option value="estudio">Estudio</option>
+                        <option value="trabajo">Trabajo</option>
+                        <option value="ninguna">Ninguna de las anteriores</option>
+                    </select><br><br>
+                </li>
+                <!-- Resto de tu formulario -->
+            </ul>
+            <form action="url_destino" method="post">
+                <label for="direccion">Dirección:</label><br>
+                <input type="text" id="direccion" name="direccion" required><br>
+        
+                <label for="telefono">Número de Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" required><br>
+        
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br>
+        
+                <input type="submit" value="Guardar Información">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
